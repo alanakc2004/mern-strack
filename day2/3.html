@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid with Same Margins</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .a {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .b {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px; /* Same margin for all images */
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b"><img src="1.jpg" alt="Image 1"></div>
+        <div class="b"><img src="2.jpg" alt="Image 2"></div>
+        <div class="b"><img src="3.jpg" alt="Image 3"></div>
+        <div class="b"><img src="4.jpg" alt="Image 4"></div>
+        <div class="b"><img src="5.jpg" alt="Image 5"></div>
+        <div class="b"><img src="6.jpg" alt="Image 6"></div>
+        <div class="b"><img src="7.jpg" alt="Image 7"></div>
+        <div class="b"><img src="8.jpg" alt="Image 8"></div>
+        <div class="b"><img src="9.jpg" alt="Image 9"></div>
+    </div>
+</body>
+</html>

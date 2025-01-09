@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header Section */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .branding {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .nav-menu a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #ffeb3b;
+  }
+  
+  /* Task Management Panel */
+  .task-panel {
+    padding: 2rem;
+  }
+  
+  .task-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .task-desc {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .task {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .overdue {
+    color: red;
+    font-style: italic;
+  }
+  
+  .completed .task-title {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Calendar Section */
+  .calendar {
+    padding: 2rem;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+  }
+  
+  .day {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .weekday {
+    background-color: #e3f2fd;
+  }
+  
+  .weekend {
+    background-color: #ffccbc;
+  }
+  
+  .current {
+    background-color: #4caf50;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Collaboration Section */
+  .collaboration {
+    padding: 2rem;
+  }
+  
+  .message {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f8e9;
+  }
+  
+  .alternate {
+    background-color: #e8f5e9;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text {
+    font-size: 1rem;
+  }
+  
+  /* Footer Section */
+  footer {
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #4caf50;
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: #ffeb3b;
+  }
+  
+  /* Accessibility and Responsiveness */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-menu {
+      margin-top: 1rem;
+    }
+  
+    .calendar-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  

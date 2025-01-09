@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="5.css">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .registration-container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .registration-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .form-group input:invalid {
+            border-color: red;
+            background-color: #ffe6e6;
+        }
+
+        .form-group input:valid {
+            border-color: green;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+
+        .form-group input:invalid + .error-message {
+            display: block;
+        }
+
+        .password-strength {
+            height: 5px;
+            background-color: #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: red;
+            transition: width 0.3s ease;
+        }
+
+        .form-group input#password:valid ~ .password-strength .progress-bar {
+            width: 100%;
+            background-color: green;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="registration-container" >
+        <h1>Create an Account</h1>
+        <form class="registration-form" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message">Name is required</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message">Enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="password-strength">
+                    <div class="progress-bar"></div>
+                </div>
+                <span class="error-message">Password must be strong</span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <span class="error-message">Passwords do not match</span>
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <footer style="background-color: burlywood;">
+        <p><a href="#">Contact Us</a> |<br><br> <a href="#">Privacy Policy</a> <br>|<br> <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
+

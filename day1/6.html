@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Navigation Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        nav {
+            background-color: #007BFF;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            background-color: #0056b3;
+            padding: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            margin: 0;
+        }
+        nav ul li ul li a {
+            padding: 8px 15px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        nav ul li ul li a:hover {
+            background-color: #003d80;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Electronics</a>
+                <ul>
+                    <li><a href="phone.jpg">Mobile Phones</a></li>
+                    <li><a href="laptop.jpg">Laptops</a></li>
+                    <li><a href="#">Cameras</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Furniture</a>
+                <ul>
+                    <li><a href="#">Sofas</a></li>
+                    <li><a href="#">Beds</a></li>
+                    <li><a href="#">Dining Tables</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Clothing</a>
+                <ul>
+                    <li><a href="#">Men's Wear</a></li>
+                    <li><a href="#">Women's Wear</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
