@@ -1,0 +1,41 @@
+
+<html >
+<head>
+    <title>Circle Color Toggle</title>
+    <style>
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        #toggleButton {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <button id="toggleButton">Switch On</button>
+
+    <script>
+        let circle = document.getElementById("circle");
+        let button = document.getElementById("toggleButton");
+        button.onclick = function() {
+            if (circle.style.backgroundColor === "black") {
+                circle.style.backgroundColor = "yellow";
+                button.textContent = "Switch Off";
+            } else {
+                circle.style.backgroundColor = "black";
+                button.textContent = "Switch On"; 
+            }
+        };
+    </script>
+
+</body>
+</html>

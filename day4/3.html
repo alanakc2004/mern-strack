@@ -1,0 +1,63 @@
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        #videoContainer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        video {
+            width: 600px;
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="videoContainer">
+        <video id="videoPlayer" controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <button id="pauseButton">Pause</button>
+        <button id="forwardButton">+5 Seconds</button>
+        <button id="backwardButton">-5 Seconds</button>
+    </div>
+
+    <script>
+        let video = document.getElementById("videoPlayer");
+        document.getElementById("pauseButton").onclick = function() {
+            if (video.paused) {
+                video.play();
+                this.textContent = "Pause"; 
+            } else {
+                video.pause();
+                this.textContent = "Play";
+            }
+        };
+        document.getElementById("forwardButton").onclick = function() {
+            video.currentTime += 5; 
+        };
+        document.getElementById("backwardButton").onclick = function() {
+            video.currentTime -= 5; 
+            if (video.currentTime < 0) {
+                video.currentTime = 0;
+            }
+        };
+    </script>
+
+</body>
+</html>

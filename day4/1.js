@@ -1,0 +1,21 @@
+let numbers = [];
+numbers.push(10);
+numbers.push(20);
+numbers.push(30);
+console.log("After push:", numbers); 
+let lastElement = numbers.pop();
+console.log("Popped Element:", lastElement); 
+console.log("After pop:", numbers); 
+numbers.unshift(5);
+console.log("After unshift:", numbers); 
+let firstElement = numbers.shift();
+console.log("Shifted Element:", firstElement); 
+console.log("After shift:", numbers); 
+let slicedArray = numbers.slice(0, 1);
+console.log("Sliced Array:", slicedArray); 
+let moreNumbers = [40, 50];
+let combinedArray = numbers.concat(moreNumbers);
+console.log("Combined Array:", combinedArray);
+let index = combinedArray.indexOf(20);
+console.log("Index of 20:", index); 
+
