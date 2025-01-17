@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            margin-top: 10px;
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            display: inline-block;
+            background: #007BFF;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #ff6600;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+        .train-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .train-card {
+            width: 300px;
+            margin: 15px;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .train-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .train-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ7nqe_WY0Q3ymzs5BEwyU3jsPZnqGD_sK4g&s" alt="Company Logo" class="logo">
+        <span class="company-name">Train Booking</span>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Book Ticket</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About</a>
+    </nav>
+    <div class="content">
+        <h2>Available Trains</h2>
+        <div class="train-list">
+            <div class="train-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLf4Uc8TT9W3H1D05lTFb-Nv495Owb2sFpVw&s" alt="Train 1">
+                <h3>Express Train</h3>
+                <p><strong>Route:</strong> City A - City B</p>
+                <p><strong>Departure:</strong> 08:00 AM</p>
+                <p><strong>Arrival:</strong> 06:00 PM</p>
+                <p><strong>Duration:</strong> 10 hours</p>
+            </div>
+            <div class="train-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikTYjuuMLQ3Y_OAZNhBGROlQtmjHKZIs_0VvM9DRk_UrSudbXhlC6f7yPW4HYN4ttzZ6xIWuPVqGV13vmXpu9Fh9AyQFC88zrtJWBRSggDOdzyM5VjZPfaSGbc3eXXGAaSO6pSsXh2ZS2kUla-sELXo8kQYRwClv0wGX3p0z4tG8GBH3SbhJ-Q2wxRHIU/w640-h512/B5FE978A-633B-4B0E-9452-FF18BDB91306.jpeg" alt="Train 2">
+                <h3>Fast Express</h3>
+                <p><strong>Route:</strong> City C - City D</p>
+                <p><strong>Departure:</strong> 09:30 AM</p>
+                <p><strong>Arrival:</strong> 07:15 PM</p>
+                <p><strong>Duration:</strong> 9 hours 45 minutes</p>
+            </div>
+            <div class="train-card">
+                <img src="https://cdn.dnaindia.com/sites/default/files/2023/02/17/2573610-untitled-design-2023-02-17t211749.609.jpg?im=FitAndFill=(1200,900)" alt="Train 3">
+                <h3>Super Express</h3>
+                <p><strong>Route:</strong> City E - City F</p>
+                <p><strong>Departure:</strong> 07:45 AM</p>
+                <p><strong>Arrival:</strong> 05:30 PM</p>
+                <p><strong>Duration:</strong> 9 hours 45 minutes</p>
+            </div>
+            <div class="train-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Mumbai_suburban_railway_emu_3.JPG/300px-Mumbai_suburban_railway_emu_3.JPG" alt="Train 4">
+                <h3>Night Express</h3>
+                <p><strong>Route:</strong> City G - City H</p>
+                <p><strong>Departure:</strong> 10:00 PM</p>
+                <p><strong>Arrival:</strong> 06:00 AM</p>
+                <p><strong>Duration:</strong> 8 hours</p>
+            </div>
+            <div class="train-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/AC-EMU-Mumbai.jpg/320px-AC-EMU-Mumbai.jpg" alt="Train 5">
+                <h3>Regional Express</h3>
+                <p><strong>Route:</strong> City I - City J</p>
+                <p><strong>Departure:</strong> 06:30 AM</p>
+                <p><strong>Arrival:</strong> 02:15 PM</p>
+                <p><strong>Duration:</strong> 7 hours 45 minutes</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
